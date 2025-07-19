@@ -40,6 +40,16 @@ Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
 Plug('emmanueltouzery/decisive.nvim') --view csv files
 Plug('folke/twilight.nvim') --surrounding dim
 
+-- lsp and completion
+Plug('neovim/nvim-lspconfig')
+Plug('hrsh7th/nvim-cmp')
+Plug('hrsh7th/cmp-nvim-lsp')
+Plug('hrsh7th/cmp-buffer')
+Plug('hrsh7th/cmp-path')
+Plug('L3MON4D3/LuaSnip')
+Plug('saadparwaiz1/cmp_luasnip')
+
+
 vim.call('plug#end')
 
 -- move config and plugin config to alternate files
@@ -49,21 +59,24 @@ require("config.options")
 require("config.autocmd")
 
 require("plugins.alpha")
--- require("plugins.autopairs")
+require("plugins.autopairs")
 require("plugins.barbar")
 require("plugins.colorizer")
 require("plugins.colorscheme")
 require("plugins.comment")
--- require("plugins.fterm")
--- require("plugins.fzf-lua")
+require("plugins.fterm")
+require("plugins.fzf-lua")
 require("plugins.gitsigns")
 require("plugins.lualine")
 require("plugins.nvim-lint")
--- require("plugins.nvim-tree")
+require("plugins.nvim-tree")
 require("plugins.render-markdown")
--- require("plugins.treesitter")
--- require("plugins.twilight")
--- require("plugins.which-key")
+require("plugins.treesitter")
+require("plugins.twilight")
+require("plugins.which-key")
+require("plugins.lsp")
+require("plugins.cmp")
+
 
 vim.defer_fn(function() 
 		--defer non-essential configs,

@@ -19,10 +19,11 @@ local options = {
 	relativenumber = true, --toggle bound to leader nn
 	numberwidth = 4,
 
-	smarttab = true, --indentation stuff
-	cindent = true,
-	autoindent = false,
+	expandtab = true, --use spaces instead of tabs
+	shiftwidth = 4, --number of spaces to use for autoindent
+	softtabstop = 4, --number of spaces that a <Tab> counts for
 	tabstop = 4, --visual width of tab
+	autoindent = true, --copy indent from current line when starting a new line
 
 	foldmethod = "expr",
 	foldlevel = 99, --disable folding, lower #s enable
