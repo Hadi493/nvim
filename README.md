@@ -1,4 +1,4 @@
-## Bread's guide to **Neovim** configuration
+## Hadi's guide to **Neovim** configuration
 
 #### Build off of mine, or start your own!
 
@@ -12,7 +12,7 @@
 
 ### Quickstart with my config:
 ```
-cd ~/.config/ && git clone https://github.com/BreadOnPenguins/nvim
+cd ~/.config/ && git clone https://github.com/Hadi493/nvim
 ```
 - On first boot, run `:PlugInstall` to ensure all plugins are installed and updated with [vim-plug](https://github.com/junegunn/vim-plug)
 - Key maps are in `lua/config/mappings.lua`
