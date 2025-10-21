@@ -15,7 +15,11 @@ end
 local themes = { --add more themes here, if installed
 	{ "catppuccin", "catppuccin" },
 	{ "gruvbox", "gruvbox" },
-	{ "pywal16", "pywal16-nvim" },
+
+	{ "tokyonight", "tokyonight" },
+	{ "rose-pine", "rose-pine" },
+	{ "kanagawa", "kanagawa" },
+	{ "dracula", "dracula" },
 }
 
 local current_theme_index = 1

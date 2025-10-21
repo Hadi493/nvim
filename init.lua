@@ -20,7 +20,11 @@ vim.call('plug#begin')
 
 Plug('catppuccin/nvim', { ['as'] = 'catppuccin' }) --colorscheme
 Plug('ellisonleao/gruvbox.nvim', { ['as'] = 'gruvbox' }) --colorscheme 2
-Plug('uZer/pywal16.nvim', { [ 'as' ] = 'pywal16' }) --or, pywal colorscheme
+-- Plug('uZer/pywal16.nvim', { [ 'as' ] = 'pywal16' }) --or, pywal colorscheme
+Plug('folke/tokyonight.nvim', { [ 'as' ] = 'tokyonight' })
+Plug('rose-pine/neovim', { [ 'as' ] = 'rose-pine' })
+Plug('rebelot/kanagawa.nvim')
+Plug('Mofiqul/dracula.nvim')
 Plug('nvim-lualine/lualine.nvim') --statusline
 Plug('nvim-tree/nvim-web-devicons') --pretty icons
 Plug('folke/which-key.nvim') --mappings popup
