@@ -32,7 +32,7 @@ map('n', '<A-9>', '<Cmd>BufferGoto 9<CR>')
 map('n', '<A-0>', '<Cmd>BufferLast<CR>')
 map('n', '<A-p>', '<Cmd>BufferPin<CR>')
 
--- windows - ctrl nav, fn resize
+-- windows - g nav, fn resize
 map("n", "<C-h>", "<C-w>h")
 map("n", "<C-j>", "<C-w>j")
 map("n", "<C-k>", "<C-w>k")
@@ -41,6 +41,7 @@ map("n", "<F5>", ":resize +2<CR>")
 map("n", "<F6>", ":resize -2<CR>")
 map("n", "<F7>", ":vertical resize +2<CR>")
 map("n", "<F8>", ":vertical resize -2<CR>")
+map('n', '<C-s>', ':w') --write buffer
 
 -- fzf and grep
 map("n", "<leader>f", ":lua require('fzf-lua').files()<CR>") --search cwd
