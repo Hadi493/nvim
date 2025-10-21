@@ -78,7 +78,7 @@ require("plugins.nvim-lint")
 -- require("plugins.nvim-tree")
 require("plugins.render-markdown")
 require("plugins.lsp_config")
--- require("plugins.treesitter")
+require("plugins.treesitter")
 -- require("plugins.twilight")
 -- require("plugins.which-key")
 
