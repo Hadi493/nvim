@@ -42,6 +42,8 @@ map("n", "<F6>", ":resize -2<CR>")
 map("n", "<F7>", ":vertical resize +2<CR>")
 map("n", "<F8>", ":vertical resize -2<CR>")
 map('n', '<C-s>', ':w') --write buffer
+map('n', '<C-x>', ':q') --exit
+map('n', '<A-x>', ':wqa') --write all buffer and exit	
 
 -- fzf and grep
 map("n", "<leader>f", ":lua require('fzf-lua').files()<CR>") --search cwd
