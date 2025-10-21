@@ -39,8 +39,20 @@ Plug('ron-rs/ron.vim') --ron syntax highlighting
 Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
 Plug('emmanueltouzery/decisive.nvim') --view csv files
 Plug('folke/twilight.nvim') --surrounding dim
+Plug('neovim/nvim-lspconfig') -- Collection of configurations for built-in LSP client
+Plug('hrsh7th/nvim-cmp') -- Autocompletion plugin
+Plug('hrsh7th/cmp-nvim-lsp') -- LSP source for nvim-cmp
+Plug('hrsh7th/cmp-buffer') -- Buffer source for nvim-cmp
+Plug('hrsh7th/cmp-path') -- Path source for nvim-cmp
+Plug('hrsh7th/cmp-cmdline') -- Cmdline source for nvim-cmp
+Plug('L3MON4D3/LuaSnip') -- Snippet engine
+Plug('saadparwaiz1/cmp_luasnip') -- Snippet source for nvim-cmp
+Plug('rafamadriz/friendly-snippets') -- A collection of snippets
+Plug('rhysd/vim-grammarous') -- Grammar correction
+
 
 vim.call('plug#end')
+vim.g.grammarous_lang = 'en-US,ar' -- For English (US) and Arabic
 
 -- move config and plugin config to alternate files
 require("config.theme")
@@ -61,6 +73,7 @@ require("plugins.lualine")
 require("plugins.nvim-lint")
 -- require("plugins.nvim-tree")
 require("plugins.render-markdown")
+require("plugins.lsp_config")
 -- require("plugins.treesitter")
 -- require("plugins.twilight")
 -- require("plugins.which-key")
