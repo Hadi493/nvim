@@ -65,7 +65,7 @@ require("config.options")
 require("config.autocmd")
 
 require("plugins.alpha")
--- require("plugins.autopairs")
+require("plugins.autopairs")
 require("plugins.barbar")
 require("plugins.colorizer")
 require("plugins.colorscheme")
