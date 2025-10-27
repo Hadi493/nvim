@@ -79,8 +79,8 @@ map("n", "[c", ":lua require('decisive').align_csv_prev_col()<cr>")
 map("n", "]c", ":lua require('decisive').align_csv_next_col()<cr>")
 
 
-map("n", "<leader>H", function() --toggle htop in term
-    _G.htop:toggle()
+map("n", "<leader>B", function() --toggle htop in term
+    _G.btop:toggle()
 end)
 
 
