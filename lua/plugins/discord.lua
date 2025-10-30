@@ -1,6 +1,6 @@
 require('discord').setup({
   -- Basic settings
-  client_id = "DISCORD_CLINT_ID", -- main id
+  client_id = "1231603950738866298", -- main id
   idle_timeout_ms = 5000,                -- Time before showing idle (default: 5000)
   show_timer = true,                     -- Show elapsed time (default: true)
   debounce_timeout_ms = 500,             -- Debounce updates (default: 500)
