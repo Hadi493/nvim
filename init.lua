@@ -53,7 +53,7 @@ Plug('L3MON4D3/LuaSnip') -- Snippet engine
 Plug('saadparwaiz1/cmp_luasnip') -- Snippet source for nvim-cmp
 Plug('rafamadriz/friendly-snippets') -- A collection of snippets
 Plug('rhysd/vim-grammarous') -- Grammar correction
-Plug('himonshuuu/discord.nvim') -- discord
+Plug('andweeb/presence.nvim') -- discord
 
 vim.call('plug#end')
 vim.g.grammarous_lang = 'en-US,ar' -- For English (US) and Arabic
@@ -86,7 +86,7 @@ require("plugins.nvim-tree")
 require("plugins.treesitter")
 require("plugins.twilight")
 require("plugins.which-key")
-require('plugins.discord')
+require('plugins.presence')
 
 end, 100)
 

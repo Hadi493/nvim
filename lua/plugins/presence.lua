@@ -1,0 +1,23 @@
+require("presence").setup({
+    client_id = "1231603950738866298",
+    -- General options
+    auto_update = true,
+    neovim_image_text = "The One True Text Editor",
+    main_image = "neovim", 
+
+    -- Text displayed in Discord Rich Presence
+    editing_text = "Editing %s",
+    file_explorer_text = "In file explorer",
+    git_commit_text = "Committing changes",
+    plugin_manager_text = "Managing plugins",
+    reading_text = "Reading %s",
+    workspace_text = "Working on %s",
+    idle_text = "Idle",
+
+    -- Idle settings
+    idle_timeout = 60000, 
+
+    -- Other options
+    log_level = nil,
+    show_time = true,
+})
