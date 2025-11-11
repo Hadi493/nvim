@@ -1,3 +1,6 @@
+vim.opt.shell = "bash"
+vim.env.PATH = vim.fn.stdpath('config') .. '/node_modules/.bin:' .. vim.env.PATH
+
 -- Hadi's neovim config
 -- keymaps are in lua/config/mappings.lua
 -- install a patched font & ensure your terminal supports glyphs
@@ -53,7 +56,8 @@ Plug('L3MON4D3/LuaSnip') -- Snippet engine
 Plug('saadparwaiz1/cmp_luasnip') -- Snippet source for nvim-cmp
 Plug('rafamadriz/friendly-snippets') -- A collection of snippets
 Plug('rhysd/vim-grammarous') -- Grammar correction
-Plug('andweeb/presence.nvim') -- discord
+-- Plug('andweeb/presence.nvim') -- discord
+Plug('mistweaverco/discord.nvim') -- discord.nvim
 
 vim.call('plug#end')
 vim.g.grammarous_lang = 'en-US,ar' -- For English (US) and Arabic
@@ -86,7 +90,9 @@ require("plugins.nvim-tree")
 require("plugins.treesitter")
 require("plugins.twilight")
 require("plugins.which-key")
-require('plugins.presence')
+-- require("plugins.presence")
+require("plugins.discord")
+
 
 end, 100)
 
