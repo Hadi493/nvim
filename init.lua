@@ -58,6 +58,10 @@ Plug('rafamadriz/friendly-snippets') -- A collection of snippets
 Plug('rhysd/vim-grammarous') -- Grammar correction
 -- Plug('andweeb/presence.nvim') -- discord
 -- Plug('mistweaverco/discord.nvim') -- discord.nvim
+Plug 'nvim-lua/plenary.nvim'
+Plug 'stevearc/dressing.nvim' 
+Plug 'nvim-flutter/flutter-tools.nvim'
+
 
 vim.call('plug#end')
 vim.g.grammarous_lang = 'en-US,ar' -- For English (US) and Arabic
@@ -67,7 +71,6 @@ require("config.theme")
 require("config.mappings")
 require("config.options")
 require("config.autocmd")
-
 require("plugins.alpha")
 require("plugins.barbar")
 require("plugins.colorizer")
@@ -92,7 +95,7 @@ require("plugins.twilight")
 require("plugins.which-key")
 -- require("plugins.presence")
 -- require("plugins.discord")
-
+require("plugins.flutter")
 
 end, 100)
 

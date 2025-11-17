@@ -15,7 +15,6 @@ end
 local themes = { --add more themes here, if installed
 	{ "catppuccin", "catppuccin" },
 	{ "gruvbox", "gruvbox" },
-
 	{ "tokyonight", "tokyonight" },
 	{ "rose-pine", "rose-pine" },
 	{ "kanagawa", "kanagawa" },
