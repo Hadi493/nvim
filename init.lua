@@ -17,6 +17,12 @@ end
 local vim = vim
 local Plug = vim.fn['plug#']
 
+
+
+vim.api.nvim_create_user_command("Pdf", function(opts)
+  require("plugins.pdf").open_pdf(opts.args)
+end, { nargs = 1 })
+
 vim.g.start_time = vim.fn.reltime()
 vim.loader.enable() --  SPEEEEEEEEEEED 
 vim.call('plug#begin')
@@ -62,6 +68,11 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'stevearc/dressing.nvim' 
 Plug 'nvim-flutter/flutter-tools.nvim'
 
+Plug '3rd/image.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'xuhdev/vim-latex-live-preview'
+Plug 'weirongxu/plantuml-previewer.vim'
+Plug 'lervag/vimtex'
 
 vim.call('plug#end')
 vim.g.grammarous_lang = 'en-US,ar' -- For English (US) and Arabic
@@ -96,6 +107,8 @@ require("plugins.which-key")
 -- require("plugins.presence")
 -- require("plugins.discord")
 require("plugins.flutter")
+require("plugins.image")
+
 
 end, 100)
 
