@@ -74,6 +74,10 @@ Plug 'xuhdev/vim-latex-live-preview'
 Plug 'weirongxu/plantuml-previewer.vim'
 Plug 'lervag/vimtex'
 
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'mfussenegger/nvim-jdtls'
+
+
 vim.call('plug#end')
 vim.g.grammarous_lang = 'en-US,ar' -- For English (US) and Arabic
 
