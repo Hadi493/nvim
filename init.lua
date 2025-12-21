@@ -67,6 +67,8 @@ Plug('rhysd/vim-grammarous') -- Grammar correction
 Plug 'nvim-lua/plenary.nvim'
 Plug 'stevearc/dressing.nvim' 
 Plug 'nvim-flutter/flutter-tools.nvim'
+Plug 'chomosuke/typst-preview.nvim'
+
 
 Plug '3rd/image.nvim'
 Plug 'nvim-lua/popup.nvim'
@@ -75,7 +77,6 @@ Plug 'weirongxu/plantuml-previewer.vim'
 Plug 'lervag/vimtex'
 
 Plug 'williamboman/nvim-lsp-installer'
-Plug 'mfussenegger/nvim-jdtls'
 
 
 vim.call('plug#end')
@@ -96,6 +97,7 @@ require("plugins.lualine")
 require("plugins.nvim-lint")
 require("plugins.render-markdown")
 require("plugins.lsp_config")
+require("plugins.typst-preview")
 
 vim.defer_fn(function() 
 		--defer non-essential configs,

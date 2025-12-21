@@ -6,7 +6,6 @@ require('lint').linters_by_ft = { --some of these need to be installed from pack
   rust = {'clippy'},
   css = {'stylelint'},
   html = {'htmlhint'},
-  asm = {'asm-lsp'},
 }
 
 -- Some linters require a file to be saved to disk, others support linting stdin input.

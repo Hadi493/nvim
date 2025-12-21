@@ -4,6 +4,9 @@ local function map(m, k, v)
 	vim.keymap.set(m, k, v, { noremap = true, silent = true })
 end
 
+-- require image_toggle
+local image_toggle = require("config.image_toggle")
+
 -- set leader
 map("", "<Space>", "<Nop>")
 vim.g.mapleader = " "
@@ -71,6 +74,7 @@ map("n", "<leader>u", ':silent !xdg-open "<cWORD>" &<CR>') --open a url under cu
 map("v", "<leader>i", "=gv") --auto indent
 map("n", "<leader>W", ":set wrap!<CR>") --toggle wrap
 map("n", "<leader>l", ":Twilight<CR>") --surrounding dim
+map("n", "<leader>I", image_toggle.toggle_image_preview) -- Toggle image preview
 
 -- decisive csv
 map("n", "<leader>csa", ":lua require('decisive').align_csv({})<cr>")

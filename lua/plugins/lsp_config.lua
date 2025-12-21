@@ -2,6 +2,8 @@
 --  LSP + CMP Configuration
 -- ==============================
 
+require("nvim-lsp-installer")
+
 -- Safe require
 local cmp = require("cmp")
 local luasnip = require("luasnip")
@@ -147,6 +149,12 @@ vim.lsp.config("asm_lsp", {
   filetypes = { "asm", "s", "S" },
 })
 vim.lsp.enable("asm_lsp")
+
+-- ==============================
+--  Java
+-- ==============================
+vim.lsp.config("jdtls", {})
+vim.lsp.enable("jdtls")
 
 -- Optional: Toast on LSP attach
 vim.api.nvim_create_autocmd("LspAttach", {
