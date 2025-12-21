@@ -24,7 +24,7 @@ vim.api.nvim_create_user_command("Pdf", function(opts)
 end, { nargs = 1 })
 
 vim.g.start_time = vim.fn.reltime()
-vim.loader.enable() --  SPEEEEEEEEEEED 
+-- vim.loader.enable() --  SPEEEEEEEEEEED 
 vim.call('plug#begin')
 
 Plug('catppuccin/nvim', { ['as'] = 'catppuccin' }) --colorscheme
@@ -98,11 +98,6 @@ require("plugins.nvim-lint")
 require("plugins.render-markdown")
 require("plugins.lsp_config")
 require("plugins.typst-preview")
-
-vim.defer_fn(function() 
-		--defer non-essential configs,
-		--purely for experimental purposes:
-		--this only makes a difference of +-10ms on initial startup
 require("plugins.autopairs")
 require("plugins.fterm")
 require("plugins.fzf-lua")
@@ -114,9 +109,6 @@ require("plugins.which-key")
 -- require("plugins.discord")
 require("plugins.flutter")
 require("plugins.image")
-
-
-end, 100)
 
 
 
